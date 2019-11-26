@@ -1,6 +1,9 @@
 package ca.glebestudents;
 
 import javafx.application.*;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
@@ -13,6 +16,17 @@ public class Main extends Application {
 
 	@Override
 	public void start(Stage stage) throws Exception {
+		Pane p = new Pane();
+		Scene s = new Scene(p);
+		
+		stage.setScene(s);
 		stage.setTitle(appName);
+		stage.show();
+		stage.getIcons().add(new Image(this.getResource("/images/chair.png")));
+	
+	}
+	
+	private String getResource(String loc) {
+		return this.getClass().getResource(loc).toExternalForm();
 	}
 }
