@@ -1,8 +1,7 @@
 package ca.glebestudents;
 
 public class Row {
-	
-	Seat [] row;
+	private Seat [] row;
 	
 	public Row(int length) {
 		row = new Seat[length];
