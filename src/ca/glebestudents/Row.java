@@ -1,5 +1,7 @@
 package ca.glebestudents;
 
+import javafx.scene.paint.Color;
+
 public class Row {
 	//the seats contained within the row
 	private Seat [] row;
@@ -10,6 +12,10 @@ public class Row {
 	public Row(int length, char letter) {
 		row = new Seat[length];
 		this.letter = letter;
+	}
+	
+	public void setSeatColor(Color color, int seat) {
+		row[seat].setColour(color);
 	}
 	
 	public int getLength() {

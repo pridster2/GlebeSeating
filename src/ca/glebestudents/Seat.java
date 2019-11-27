@@ -9,6 +9,9 @@ public class Seat {
 		c = color;
 	}
 	
+	public void setColour(Color color) {
+		c = color;
+	}
 	public Color getColor() {
 		return c;
 	}
