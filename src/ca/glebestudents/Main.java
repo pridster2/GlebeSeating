@@ -1,5 +1,7 @@
 package ca.glebestudents;
 
+import java.util.ArrayList;
+
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -9,6 +11,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	
 	public static final String appName = "Glebe Seating";
+	
+	//please let me know if this should or shouldn't be stored here
+	ArrayList<Section> audSections = new ArrayList<>();
 	
 	public static void main(String [] args) {
 		launch(args);
@@ -28,5 +33,9 @@ public class Main extends Application {
 	
 	private String getResource(String loc) {
 		return this.getClass().getResource(loc).toExternalForm();
+	}
+	
+	private void initializeSections() {
+		//this section must be hard-coded
 	}
 }
