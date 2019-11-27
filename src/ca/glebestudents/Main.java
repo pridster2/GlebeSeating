@@ -37,6 +37,72 @@ public class Main extends Application {
 	private void initializeSections() {
 		//this method must be hard-coded
 		//first section:
+		audSections[0].addRow(new Row(10, 'C'));
+		audSections[0].addRow(new Row(11, 'D'));
+		audSections[0].addRow(new Row(11, 'E'));
+		audSections[0].addRow(new Row(12, 'F'));
+		audSections[0].addRow(new Row(12, 'G'));
+		audSections[0].addRow(new Row(11, 'H'));
+		audSections[0].addRow(new Row(11, 'I'));
+		audSections[0].addRow(new Row(11, 'J'));
+		audSections[0].addRow(new Row(11, 'K'));
+		audSections[0].addRow(new Row(10, 'L'));
+		audSections[0].addRow(new Row(10, 'M'));
+		audSections[0].addRow(new Row(10, 'N'));
+		audSections[0].addRow(new Row(10, 'O'));
+		audSections[0].addRow(new Row(10, 'P'));
+		audSections[0].addRow(new Row(9, 'Q'));
+		audSections[0].addRow(new Row(10, 'R'));
+		audSections[0].addRow(new Row(10, 'S'));
+		audSections[0].addRow(new Row(10, 'T'));
+		audSections[0].addRow(new Row(10, 'U'));
+		audSections[0].addRow(new Row(3, 'V'));
+		audSections[0].addRow(new Row(3, 'W'));
 		
+		//second section
+		audSections[1].addRow(new Row(11, 'C'));
+		audSections[1].addRow(new Row(11, 'D'));
+		audSections[1].addRow(new Row(12, 'E'));
+		audSections[1].addRow(new Row(12, 'F'));
+		audSections[1].addRow(new Row(13, 'G'));
+		audSections[1].addRow(new Row(13, 'H'));
+		audSections[1].addRow(new Row(13, 'I'));
+		audSections[1].addRow(new Row(14, 'J'));
+		audSections[1].addRow(new Row(14, 'K'));
+		audSections[1].addRow(new Row(14, 'L'));
+		audSections[1].addRow(new Row(14, 'M'));
+		audSections[1].addRow(new Row(14, 'N'));
+		audSections[1].addRow(new Row(14, 'O'));
+		audSections[1].addRow(new Row(14, 'P'));
+		audSections[1].addRow(new Row(14, 'Q'));
+		audSections[1].addRow(new Row(14, 'R'));
+		audSections[1].addRow(new Row(14, 'S'));
+		audSections[1].addRow(new Row(14, 'T'));
+		audSections[1].addRow(new Row(14, 'U'));
+		audSections[1].addRow(new Row(10, 'V'));
+		audSections[1].addRow(new Row(10, 'W'));
+		
+		//third section
+		audSections[2].addRow(new Row(9, 'C'));
+		audSections[2].addRow(new Row(10, 'D'));
+		audSections[2].addRow(new Row(11, 'E'));
+		audSections[2].addRow(new Row(12, 'F'));
+		audSections[2].addRow(new Row(12, 'G'));
+		audSections[2].addRow(new Row(11, 'H'));
+		audSections[2].addRow(new Row(11, 'I'));
+		audSections[2].addRow(new Row(11, 'J'));
+		audSections[2].addRow(new Row(11, 'K'));
+		audSections[2].addRow(new Row(10, 'L'));
+		audSections[2].addRow(new Row(10, 'M'));
+		audSections[2].addRow(new Row(10, 'N'));
+		audSections[2].addRow(new Row(10, 'O'));
+		audSections[2].addRow(new Row(10, 'P'));
+		audSections[2].addRow(new Row(9, 'Q'));
+		audSections[2].addRow(new Row(10, 'R'));
+		audSections[2].addRow(new Row(10, 'S'));
+		audSections[2].addRow(new Row(10, 'T'));
+		audSections[2].addRow(new Row(10, 'U'));
+		audSections[2].addRow(new Row(10, 'V'));
+		audSections[2].addRow(new Row(10, 'W'));
 	}
 }
