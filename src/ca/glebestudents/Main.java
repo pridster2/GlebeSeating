@@ -12,8 +12,7 @@ public class Main extends Application {
 	
 	public static final String appName = "Glebe Seating";
 	
-	//please let me know if this should or shouldn't be stored here
-	ArrayList<Section> audSections = new ArrayList<>();
+	Section[] audSections = new Section[3];
 	
 	public static void main(String [] args) {
 		launch(args);
@@ -36,6 +35,8 @@ public class Main extends Application {
 	}
 	
 	private void initializeSections() {
-		//this section must be hard-coded
+		//this method must be hard-coded
+		//first section:
+		
 	}
 }
