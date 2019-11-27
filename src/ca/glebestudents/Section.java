@@ -14,6 +14,9 @@ import javafx.scene.paint.Color;
 public class Section {
 	private static final int MAX_ROWS = 21;
 	private ArrayList<Row> sections;
+	
+	//alignment defines how it will be printed (think centered, aligned to the left, aligned to the right)
+	private String alignment;
 
 	public Section(){
 		sections = new ArrayList<Row>(MAX_ROWS);
@@ -27,6 +30,8 @@ public class Section {
 	public void removeRow(int index) {
 		sections.remove(index);
 	}
-	
+	public void align(String alignment) {
+		this.alignment = alignment;
+	}
 
 }

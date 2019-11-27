@@ -1,7 +1,5 @@
 package ca.glebestudents;
 
-import java.util.ArrayList;
-
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -36,6 +34,11 @@ public class Main extends Application {
 	
 	private void initializeSections() {
 		//this method must be hard-coded
+		//alignments
+		audSections[0].align("RIGHT");
+		audSections[1].align("CENTER");
+		audSections[2].align("LEFT");
+		
 		//first section:
 		audSections[0].addRow(new Row(10, 'C'));
 		audSections[0].addRow(new Row(11, 'D'));
