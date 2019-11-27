@@ -17,10 +17,12 @@ public class Section {
 		sections = new ArrayList<Row>(MAX_ROWS);
 	}
 	
-	public Section(int numberOfRows){
-		sections = new ArrayList<Row>(MAX_ROWS);
+	public void addRow(Row r, int index) {
+		sections.add(index, r);
 	}
-	
+	public void removeRow(int index) {
+		sections.remove(index);
+	}
 	
 
 }
