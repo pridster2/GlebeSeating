@@ -10,18 +10,15 @@ import java.util.ArrayList;
  *
  */
 public class Section {
-	private static final int NumSections = 3;
-	private ArrayList<Section> sections;
-	private int numRows;
-	
+	private static final int MAX_ROWS = 21;
+	private ArrayList<Row> sections;
+
 	public Section(){
-		sections = new ArrayList<Section>(NumSections);
-		numRows = 21;
+		sections = new ArrayList<Row>(MAX_ROWS);
 	}
 	
 	public Section(int numberOfRows){
-		sections = new ArrayList<Section>(NumSections);
-		numRows = numberOfRows;
+		sections = new ArrayList<Row>(MAX_ROWS);
 	}
 	
 	
