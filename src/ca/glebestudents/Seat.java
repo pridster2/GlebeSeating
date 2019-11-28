@@ -7,6 +7,10 @@ public class Seat {
 	//the name of the teacher whose student possesses the seat
 	private String teacherName;
 	
+	public Seat() {
+		
+	}
+	
 	public Seat(Color color) {
 		c = color;
 	}

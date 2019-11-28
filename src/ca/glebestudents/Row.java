@@ -11,6 +11,9 @@ public class Row {
 	//constructor: takes in the length of the row (number of seats) and the new letter
 	public Row(int length, char letter) {
 		row = new Seat[length];
+		for (int i = 0; i < row.length; i++) {
+			row[i] = new Seat();
+		}
 		this.letter = letter;
 	}
 	
