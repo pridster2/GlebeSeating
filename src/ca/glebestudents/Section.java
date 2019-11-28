@@ -1,16 +1,9 @@
-/**
- * 
- */
 package ca.glebestudents;
 
 import java.util.ArrayList;
 
 import javafx.scene.paint.Color;
 
-/**
- * @author agent
- *
- */
 public class Section {
 	private static final int MAX_ROWS = 21;
 	private ArrayList<Row> sections;
