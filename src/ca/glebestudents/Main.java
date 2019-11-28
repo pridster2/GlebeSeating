@@ -4,6 +4,7 @@ import java.io.File;
 import java.util.ArrayList;
 import javafx.application.*;
 import javafx.scene.Scene;
+import javafx.scene.canvas.Canvas;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -12,6 +13,8 @@ public class Main extends Application {
 	
 	//application name to be displayed at the top of the window
 	public static final String appName = "Glebe Seating";
+	public static final int canvasHeight = 512;
+	public static final int canvasWidth = 512;
 	
 	//the icon to display
 	public Image icon = new Image(this.getResource("/images/chair.png"));
@@ -23,9 +26,10 @@ public class Main extends Application {
 	//the file where the classes are stored
 	private File dataFile = new File(this.getResource("/file/path/here"));
 	
-	//the sections of the auditorium
-	Section[] audSections = new Section[3];
+	private Section[] audSections = new Section[3];
+	private Canvas canvas = new Canvas(canvasWidth, canvasHeight);
 	
+
 	public static void main(String [] args) {
 		launch(args);
 	}
@@ -33,6 +37,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage stage) throws Exception {
 		Pane p = new Pane();
+		p.getChildren().add(canvas);
 		Scene s = new Scene(p);
 		
 		stage.setScene(s);
@@ -128,5 +133,9 @@ public class Main extends Application {
 		audSections[2].addRow(new Row(10, 'U'));
 		audSections[2].addRow(new Row(10, 'V'));
 		audSections[2].addRow(new Row(10, 'W'));
+	}
+	
+	public static void draw(int x, int y, Seat s) {
+		
 	}
 }
