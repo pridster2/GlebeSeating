@@ -3,6 +3,8 @@ package ca.glebestudents;
 import javafx.scene.paint.Color;
 
 public class Seat {
+	public static final int width = 12;
+	public static final int height = 12;
 	private Color c;
 	//the name of the teacher whose student possesses the seat
 	private String teacherName;

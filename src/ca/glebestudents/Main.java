@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
+import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
@@ -27,7 +28,8 @@ public class Main extends Application {
 	private File dataFile = new File(this.getResource("/file/path/here"));
 	
 	private Section[] audSections = new Section[3];
-	private Canvas canvas = new Canvas(canvasWidth, canvasHeight);
+	private static Canvas canvas = new Canvas(canvasWidth, canvasHeight);
+	private static GraphicsContext graphics = canvas.getGraphicsContext2D();
 	
 
 	public static void main(String [] args) {
@@ -136,6 +138,6 @@ public class Main extends Application {
 	}
 	
 	public static void draw(int x, int y, Seat s) {
-		
+		graphics.fillRect(x, y, Seat.width, Seat.height);
 	}
 }
