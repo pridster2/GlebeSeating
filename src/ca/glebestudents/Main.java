@@ -8,7 +8,11 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 	
+	//application name to be displayed at the top of the window
 	public static final String appName = "Glebe Seating";
+	
+	//the icon to display
+	public Image icon = new Image(this.getResource("/images/chair.png"));
 	
 	Section[] audSections = new Section[3];
 	
@@ -24,7 +28,7 @@ public class Main extends Application {
 		stage.setScene(s);
 		stage.setTitle(appName);
 		stage.show();
-		stage.getIcons().add(new Image(this.getResource("/images/chair.png")));
+		stage.getIcons().add(icon);
 	
 	}
 	
