@@ -1,5 +1,8 @@
 package ca.glebestudents;
 
+import java.io.File;
+import java.util.ArrayList;
+
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -14,6 +17,14 @@ public class Main extends Application {
 	//the icon to display
 	public Image icon = new Image(this.getResource("/images/chair.png"));
 	
+	//the list of classes, which will be put in a random order
+	public ArrayList<Group> classes;
+	private ListCreator classRandomizer;
+	
+	//the file where the classes are stored
+	private File dataFile = new File(this.getResource("/file/path/here"));
+	
+	//the sections of the auditorium
 	Section[] audSections = new Section[3];
 	
 	public static void main(String [] args) {
@@ -34,6 +45,13 @@ public class Main extends Application {
 	
 	private String getResource(String loc) {
 		return this.getClass().getResource(loc).toExternalForm();
+	}
+	
+	private void initializeList() {
+		//create the new ListCreator with the data file
+		classRandomizer = new ListCreator(dataFile);
+		//get the random grouping for placement within the auditorium
+		classes = classRandomizer.getRandomGrouping();
 	}
 	
 	private void initializeSections() {
