@@ -2,7 +2,6 @@ package ca.glebestudents;
 
 import java.io.File;
 import java.util.ArrayList;
-
 import javafx.application.*;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
